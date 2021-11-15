@@ -1,0 +1,12 @@
+version: '3'
+services:
+
+  mysql:
+    name: mysql
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: spring_security
+    ports:
+      - "3306:3306"
