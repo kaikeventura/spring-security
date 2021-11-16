@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "86a6bd1c-05c5-4374-a139-6dae99a8cdf2",
+		"name": "Spring Security",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sign Up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"common@gmail.com\",\n    \"password\": \"123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/user/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"user",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sign In",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"common@gmail.com\",\n    \"password\": \"123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/user/signin",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"user",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Common and Admin Users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJzZWN1cml0eSIsInN1YiI6ImFkbWluQGdtYWlsLmNvbSIsImlhdCI6MTYzNzAxNDAyOCwiZXhwIjoxNjM3MDE0MDg4fQ.i9z9h2OMb5QxwSU-XRYgPj7bB167SEYeq4YGEq8OtxE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/user/common-admin",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"user",
+						"common-admin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Common User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJzZWN1cml0eSIsInN1YiI6ImFkbWluQGdtYWlsLmNvbSIsImlhdCI6MTYzNzAxNDAyOCwiZXhwIjoxNjM3MDE0MDg4fQ.i9z9h2OMb5QxwSU-XRYgPj7bB167SEYeq4YGEq8OtxE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/user/common",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"user",
+						"common"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJzZWN1cml0eSIsInN1YiI6ImFkbWluQGdtYWlsLmNvbSIsImlhdCI6MTYzNzAxNDAyOCwiZXhwIjoxNjM3MDE0MDg4fQ.i9z9h2OMb5QxwSU-XRYgPj7bB167SEYeq4YGEq8OtxE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/user/admin",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"user",
+						"admin"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
